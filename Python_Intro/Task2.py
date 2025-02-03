@@ -1,4 +1,4 @@
-# Math Fun 
+# Math Fun task3
 def add(a, b):
    return a + b
 
