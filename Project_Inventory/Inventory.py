@@ -43,7 +43,6 @@ class inventory():
             
         return total_price
     
-
 inventory_data= {}
 
 apple_quantity = int(input("enter quantity of apple"))
