@@ -1,0 +1,24 @@
+Building the Application
+
+Installed necessary libraries (transformers, openai).
+
+Connected to an AI model via API and developed an interactive script.
+
+Tested prompts like sentence completion, poem generation, and summarization.
+
+Debugging Issues
+
+Fixed API connectivity and authentication errors.
+
+Improved input handling to prevent invalid prompts.
+
+Adjusted output parameters like max tokens and temperature for better control.
+
+Evaluation and Observations
+
+Provided diverse prompts to test AI adaptability.
+
+Experimented with response length and creativity settings.
+
+Documented patterns, biases, and inconsistencies in AI responses.
+
