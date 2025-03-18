@@ -1,0 +1,11 @@
+Evaluating prompt effectiveness enhances productivity by reducing errors and ensuring more accurate outputs.
+A vague prompt often leads to irrelevant or overly broad responses, requiring additional revisions. 
+In work or studies, clear prompts save time by minimizing back-and-forth clarifications. For example, a research summary prompt specifying a three-paragraph structure with a focus on key arguments ensures consistency across summaries. 
+In programming, a well-structured prompt for AI-generated code prevents unnecessary debugging by clarifying input formats and constraints. 
+Additionally, structured prompts enhance collaboration, as precise instructions reduce misinterpretations.
+Regularly refining prompts based on results leads to more efficient workflows and higher-quality outputs, ultimately streamlining academic and professional tasks.
+
+Improved Prompt
+Specific Instructions: Clarifies length, focus, and format.
+Context & Examples: Provides guidance on what to include.
+Focus & Structure: Ensures relevant and concise output.
