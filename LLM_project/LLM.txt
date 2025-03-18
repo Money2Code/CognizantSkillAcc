@@ -1,0 +1,29 @@
+Task Definition
+
+This project focuses on developing a content generation tool using Azure’s visual editor.
+The tool allows users to input a topic and receive an AI-generated blog post draft. The objective is to streamline content creation by leveraging large language models (LLMs).
+
+Prompt Flow Design
+
+Input Nodes: Capture user topics and preprocess inputs.
+Model Nodes: Process the topic using a pre-trained LLM (e.g., GPT-based models).
+Output Nodes: Format and display the generated draft.
+External Integrations: Optional API calls for fact-checking or keyword optimization.
+Prototype Summary
+
+The tool was implemented using Azure AI Studio, with prompt engineering to refine LLM responses.
+Testing involved generating drafts across multiple topics, improving consistency and relevance by adjusting temperature and token limits.
+
+Monitoring Insights
+
+Key performance metrics:
+
+Latency: Ensuring quick response times.
+Error Rates: Identifying failed generations.
+User Feedback: Analyzing relevance and coherence.
+Azure provides real-time monitoring tools to track these metrics, ensuring continuous improvements.
+Future Improvements
+
+Enhancing model fine-tuning for industry-specific content.
+Improving response speed and reducing hallucinations.
+Expanding monitoring capabilities for better user experience analytics.
