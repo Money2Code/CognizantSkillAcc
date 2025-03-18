@@ -1,0 +1,13 @@
+"Explain quantum physics and include jokes."
+
+Issues:
+Too broad—quantum physics is complex.
+No clarity on the humor style (scientific jokes or casual jokes?).
+Refined Prompt:
+
+"Explain the basics of quantum physics in simple terms for a beginner. Use one analogy and include two light-hearted jokes related to quantum mechanics."
+
+Fixes:
+Clarifies audience level (beginner).
+Breaks task into steps (basic explanation + analogy + jokes).
+Ensures structured humor (limits jokes to two).
