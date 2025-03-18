@@ -1,0 +1,17 @@
+Challenges Faced:
+
+Memory Constraints:
+Training a large model on a CPU was slow.
+Solution: Used a GPU (torch.cuda.is_available()) for faster training.
+Long Training Time:
+Fine-tuning on IMDB took time.
+Solution: Used smaller batch_size=8 and enabled mixed precision training via accelerate.
+Overfitting on Training Data:
+High training accuracy but lower test accuracy.
+Solution: Applied weight decay (0.01) and used dropout layers.
+Improving Accuracy (if Below 90%)
+
+Increase Epochs: Train for 5–6 epochs while monitoring validation loss.
+Hyperparameter Tuning: Adjust learning rate (e.g., 3e-5 to 5e-5) and batch size.
+Data Augmentation: Use paraphrasing or back-translation to increase training data diversity.
+Use a Larger Model: Try bert-base-uncased instead of distilbert-base-uncased.
