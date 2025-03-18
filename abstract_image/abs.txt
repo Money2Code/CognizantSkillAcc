@@ -1,0 +1,7 @@
+The project focuses on using Generative Adversarial Networks (GANs) to generate unique abstract art. It involves training a GAN on a dataset of abstract images to create visually diverse and creative outputs.
+
+The process begins with dataset preparation, where abstract art images are collected, resized, and normalized for training. The GAN consists of a generator, which produces images from random noise, and a discriminator, which distinguishes between real and generated images. Both models are trained using an adversarial process to improve output quality.
+
+Once trained, the generator produces synthetic abstract art, which is evaluated based on visual appeal and resemblance to real artworks. Further enhancements include training on specific artistic styles and adding user interactivity for customizations.
+
+The project delivers trained GAN models, a collection of generated images, performance analysis, and documentation. Future improvements could explore style transfer, user input customization, and refining training stability to enhance artistic quality
