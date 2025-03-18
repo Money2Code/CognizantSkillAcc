@@ -1,0 +1,56 @@
+Model Selection & Task Definition
+For this case study, we select a pre-trained sentiment analysis model from Azure AI Studio's catalog. The goal is to fine-tune the model for analyzing customer service feedback, helping businesses improve their customer experience based on sentiment insights.
+Dataset Selection & Preparation
+We use a dataset consisting of customer reviews from e-commerce platforms. The dataset includes:
+Text reviews (e.g., "The product arrived late and was damaged.")
+Sentiment labels (e.g., Positive, Negative, Neutral)
+
+Data Preparation Steps:
+Data Cleaning: Remove special characters, convert text to lowercase.
+Tokenization: Convert text into tokenized input suitable for the model.
+Balancing the Dataset: Ensure equal representation of sentiment classes.
+Splitting Data: Divide data into training (80%) and validation (20%) sets.
+
+Fine-Tuning the Model
+Using Azure Machine Learning (AML) and Hugging Face’s Transformers, we implement fine-tuning.
+
+from transformers import AutoModelForSequenceClassification, Trainer, TrainingArguments
+from datasets import load_dataset
+
+# Load pre-trained model
+dataset = load_dataset("csv", data_files={"train": "train.csv", "test": "test.csv"})
+model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=3)
+
+# Define training arguments
+training_args = TrainingArguments(
+    output_dir="./results",
+    evaluation_strategy="epoch",
+    learning_rate=2e-5,
+    per_device_train_batch_size=8,
+    per_device_eval_batch_size=8,
+    num_train_epochs=3,
+)
+
+trainer = Trainer(model=model, args=training_args, train_dataset=dataset["train"], eval_dataset=dataset["test"])
+trainer.train()
+
+Model Evaluation
+
+Reflection on Model Performance
+
+After fine-tuning, we evaluate the model using metrics like accuracy, precision, recall, and F1-score. Key challenges include overfitting, class imbalance, and domain-specific language variations.
+
+Evaluation Metrics:
+F1-Score: Balances precision and recall.
+Accuracy: Measures correct predictions over total instances.
+
+Cross-Validation: Ensures model generalizability.
+Confusion Matrix: Highlights false positives and negatives.
+Evaluating and Deploying Models
+Reflection on Model Evaluation
+Skipping proper evaluation can lead to biased or unreliable models. For example, a high accuracy score might be misleading if the dataset is imbalanced (e.g., 90% positive reviews). Cross-validation helps ensure robustness, and F1-score prevents over-reliance on a single metric.
+
+Deployment Strategy:
+Deploy the fine-tuned model using Azure Machine Learning Endpoints.
+Enable real-time monitoring to track model performance.
+Implement continuous model updates based on new data.
