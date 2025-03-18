@@ -1,0 +1,17 @@
+The project fine-tunes distilbert-base-uncased for sentiment analysis using the IMDB dataset. The model classifies reviews into positive, neutral, or negative categories.
+
+Challenges and Solutions:
+
+Long reviews exceeding 512 tokens – Applied truncation to retain essential context.
+Class imbalance (no neutral class in IMDB dataset) – Curated a neutral category manually.
+Overfitting risk – Used weight decay to regularize the model.
+Key Results:
+
+The fine-tuned model achieved over 90% accuracy on test data.
+F1-score was high for positive and negative reviews, but neutral sentiment detection was slightly weaker.
+The model is well-suited for customer sentiment analysis in real-world applications like chatbots and brand monitoring.
+Future Improvements:
+
+Use larger models like BERT for better context retention.
+Experiment with LoRA or QLoRA for efficient fine-tuning.
+Train on diverse datasets beyond IMDB for generalization.
