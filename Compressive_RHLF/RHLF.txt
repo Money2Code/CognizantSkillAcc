@@ -1,0 +1,13 @@
+Beyond RLHF, prompt engineering played a crucial role in refining chatbot behavior. 
+A static prompt such as “Provide health advice for headaches” often led to vague or misleading responses.
+However, dynamic and chain-of-thought (CoT) prompts, like “You are a responsible healthcare AI assistant. 
+Provide structured, medically sound advice emphasizing hydration, stress management, and when to seek medical help”, significantly improved response relevance and structure.
+
+Bias detection and privacy safeguards were also crucial. 
+Responses were audited for potential biases, such as gender-based medical assumptions, and corrections were implemented.
+Anonymization techniques were used to secure patient-related data, ensuring compliance with privacy standards.
+Key evaluation metrics included accuracy, user satisfaction, and ethical compliance, with RLHF-driven training demonstrating marked improvements in response reliability.
+
+The integration of RLHF and prompt engineering successfully enhanced the chatbot’s responsiveness, reliability, and ethical considerations. 
+Future improvements could include real-time user feedback loops and expanding training datasets for greater diversity. 
+This approach is not only applicable to healthcare but also extends to legal, financial, and customer support domains, ensuring AI systems remain trustworthy and user-centric.
