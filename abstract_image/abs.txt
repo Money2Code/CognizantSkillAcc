@@ -5,3 +5,5 @@ The process begins with dataset preparation, where abstract art images are colle
 Once trained, the generator produces synthetic abstract art, which is evaluated based on visual appeal and resemblance to real artworks. Further enhancements include training on specific artistic styles and adding user interactivity for customizations.
 
 The project delivers trained GAN models, a collection of generated images, performance analysis, and documentation. Future improvements could explore style transfer, user input customization, and refining training stability to enhance artistic quality
+
+
